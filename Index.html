@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced UI</title>
+  <link rel="stylesheet" href="brbr.css">
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg-glow one"></div>
+  <div class="bg-glow two"></div>
+
+  <!-- Main Card -->
+  <div class="card" id="homePage">
+
+    <div class="top">
+      <span class="badge">AI POWERED</span>
+      <div class="orb"></div>
+    </div>
+
+    <h1>Future Dashboard</h1>
+
+    <p>
+      Modern animated UI with page transitions,
+      glowing effects, live counters and interactive buttons.
+    </p>
+
+    <div class="stats">
+
+      <div class="box">
+        <h2 id="users">0</h2>
+        <span>Users</span>
+      </div>
+
+      <div class="box">
+        <h2 id="speed">0</h2>
+        <span>Speed</span>
+      </div>
+
+      <div class="box">
+        <h2 id="rating">0</h2>
+        <span>Rating</span>
+      </div>
+
+    </div>
+
+    <button id="exploreBtn">
+      Open Dashboard
+    </button>
+
+  </div>
+
+  <!-- Second Page -->
+  <div class="dashboard hidden" id="dashboardPage">
+
+    <div class="dashboard-header">
+      <h1>Dashboard</h1>
+
+      <button id="backBtn">
+        Back
+      </button>
+    </div>
+
+    <div class="cards">
+
+      <div class="mini-card">
+        <h2>Storage</h2>
+        <div class="progress">
+          <div class="fill storage"></div>
+        </div>
+        <p>78% Used</p>
+      </div>
+
+      <div class="mini-card">
+        <h2>CPU</h2>
+        <div class="progress">
+          <div class="fill cpu"></div>
+        </div>
+        <p>64% Active</p>
+      </div>
+
+      <div class="mini-card">
+        <h2>Security</h2>
+        <div class="progress">
+          <div class="fill security"></div>
+        </div>
+        <p>Protected</p>
+      </div>
+
+    </div>
+
+    <div class="notification">
+      🚀 System running perfectly
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
